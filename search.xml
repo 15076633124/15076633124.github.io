@@ -81,31 +81,6 @@
       </tags>
   </entry>
   <entry>
-    <title>nvm</title>
-    <url>/2023/04/20/nvm/</url>
-    <content><![CDATA[<h2 id="nvm简介"><a href="#nvm简介" class="headerlink" title="nvm简介"></a>nvm简介</h2><p>nvm是node包管理工具，不同项目依赖的node会不相同，所以就需要在不同的项目下使用不同node版本</p>
-<p>nvm就是一个比较方便的node管理工具，用来切换node版本</p>
-<h2 id="nvm下载及安装"><a href="#nvm下载及安装" class="headerlink" title="nvm下载及安装"></a>nvm下载及安装</h2><h3 id="nvm下载"><a href="#nvm下载" class="headerlink" title="nvm下载"></a>nvm下载</h3><p>安装包下载地址: <a href="https://github.com/coreybutler/nvm-windows/releases">nvm下载地址</a>,windows系统下载nvm-setup.zip安装包<br><img src="/images/nvm/nvm1.png" alt="nvm"  /></p>
-<h3 id="nvm安装"><a href="#nvm安装" class="headerlink" title="nvm安装"></a>nvm安装</h3><p>如果电脑之前存在node，先进行卸载，再解压nvm-setup.zip安装包，进入解压的文件夹，双击exe后缀文件进行安装</p>
-<img src="/images/nvm/nvm2.png" alt="nvm"  />
-
-<p>下面界面选择nvm安装的路径,</p>
-<img src="/images/nvm/nvm3.png" alt="nvm安装" />
-
-<p>下面是nodejs安装位置，尽量都在同一路径下</p>
-<img src="/images/nvm/nvm4.png" alt="nvm安装" />
-
-<p>安装完成后命令行输入 nvm -v查看版本，查看切换版本时候要使用管理员权限</p>
-<img src="/images/nvm/nvm5.png" alt="nvm安装" >
-
-<h3 id="nvm使用"><a href="#nvm使用" class="headerlink" title="nvm使用"></a>nvm使用</h3><img src="/images/nvm/nvm6.png" alt="nvm使用" >
-]]></content>
-      <categories>
-        <category>前端</category>
-        <category>nvm</category>
-      </categories>
-  </entry>
-  <entry>
     <title>git</title>
     <url>/2023/04/20/git/</url>
     <content><![CDATA[<p><img src="https://w.wallhaven.cc/full/1p/wallhaven-1pd1o9.jpg"></p>
@@ -163,5 +138,30 @@
       <tags>
         <tag>git常用命令</tag>
       </tags>
+  </entry>
+  <entry>
+    <title>nvm</title>
+    <url>/2023/04/20/nvm/</url>
+    <content><![CDATA[<h2 id="nvm简介"><a href="#nvm简介" class="headerlink" title="nvm简介"></a>nvm简介</h2><p>nvm是node包管理工具，不同项目依赖的node会不相同，所以就需要在不同的项目下使用不同node版本</p>
+<p>nvm就是一个比较方便的node管理工具，用来切换node版本</p>
+<h2 id="nvm下载及安装"><a href="#nvm下载及安装" class="headerlink" title="nvm下载及安装"></a>nvm下载及安装</h2><h3 id="nvm下载"><a href="#nvm下载" class="headerlink" title="nvm下载"></a>nvm下载</h3><p>安装包下载地址: <a href="https://github.com/coreybutler/nvm-windows/releases">nvm下载地址</a>,windows系统下载nvm-setup.zip安装包<br><img src="/images/nvm/nvm1.png" alt="nvm"  /></p>
+<h3 id="nvm安装"><a href="#nvm安装" class="headerlink" title="nvm安装"></a>nvm安装</h3><p>如果电脑之前存在node，先进行卸载，再解压nvm-setup.zip安装包，进入解压的文件夹，双击exe后缀文件进行安装</p>
+<img src="/images/nvm/nvm2.png" alt="nvm"  />
+
+<p>下面界面选择nvm安装的路径,</p>
+<img src="/images/nvm/nvm3.png" alt="nvm安装" />
+
+<p>下面是nodejs安装位置，尽量都在同一路径下</p>
+<img src="/images/nvm/nvm4.png" alt="nvm安装" />
+
+<p>安装完成后命令行输入 nvm -v查看版本，查看切换版本时候要使用管理员权限</p>
+<img src="/images/nvm/nvm5.png" alt="nvm安装" >
+
+<h3 id="nvm使用"><a href="#nvm使用" class="headerlink" title="nvm使用"></a>nvm使用</h3><img src="/images/nvm/nvm6.png" alt="nvm使用" >
+]]></content>
+      <categories>
+        <category>前端</category>
+        <category>nvm</category>
+      </categories>
   </entry>
 </search>
