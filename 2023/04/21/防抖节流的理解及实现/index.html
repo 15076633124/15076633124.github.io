@@ -20,22 +20,20 @@
     var CONFIG = {"hostname":"ygkyang.github.io","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"right","width":300,"display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
-  <meta name="description" content="git常用命令">
+  <meta name="description" content="防抖节流的理解及简单实现">
 <meta property="og:type" content="article">
-<meta property="og:title" content="git">
-<meta property="og:url" content="https://ygkyang.github.io/2023/04/20/git/index.html">
+<meta property="og:title" content="防抖节流的理解及实现">
+<meta property="og:url" content="https://ygkyang.github.io/2023/04/21/%E9%98%B2%E6%8A%96%E8%8A%82%E6%B5%81%E7%9A%84%E7%90%86%E8%A7%A3%E5%8F%8A%E5%AE%9E%E7%8E%B0/index.html">
 <meta property="og:site_name" content="ygk杨">
-<meta property="og:description" content="git常用命令">
+<meta property="og:description" content="防抖节流的理解及简单实现">
 <meta property="og:locale">
-<meta property="og:image" content="https://w.wallhaven.cc/full/1p/wallhaven-1pd1o9.jpg">
-<meta property="article:published_time" content="2023-04-20T06:44:29.146Z">
-<meta property="article:modified_time" content="2023-04-20T02:29:16.748Z">
+<meta property="article:published_time" content="2023-04-21T03:04:40.983Z">
+<meta property="article:modified_time" content="2023-04-20T02:31:22.571Z">
 <meta property="article:author" content="ygk杨">
-<meta property="article:tag" content="git常用命令">
+<meta property="article:tag" content="防抖节流">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://w.wallhaven.cc/full/1p/wallhaven-1pd1o9.jpg">
 
-<link rel="canonical" href="https://ygkyang.github.io/2023/04/20/git/">
+<link rel="canonical" href="https://ygkyang.github.io/2023/04/21/%E9%98%B2%E6%8A%96%E8%8A%82%E6%B5%81%E7%9A%84%E7%90%86%E8%A7%A3%E5%8F%8A%E5%AE%9E%E7%8E%B0/">
 
 
 <script id="page-configurations">
@@ -48,7 +46,7 @@
   };
 </script>
 
-  <title>git | ygk杨</title>
+  <title>防抖节流的理解及实现 | ygk杨</title>
   
 
 
@@ -192,7 +190,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-hans">
-    <link itemprop="mainEntityOfPage" href="https://ygkyang.github.io/2023/04/20/git/">
+    <link itemprop="mainEntityOfPage" href="https://ygkyang.github.io/2023/04/21/%E9%98%B2%E6%8A%96%E8%8A%82%E6%B5%81%E7%9A%84%E7%90%86%E8%A7%A3%E5%8F%8A%E5%AE%9E%E7%8E%B0/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
@@ -205,7 +203,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          git
+          防抖节流的理解及实现
         </h1>
 
         <div class="post-meta">
@@ -214,10 +212,16 @@
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
-              
 
-              <time title="创建时间：2023-04-20 14:44:29 / 修改时间：10:29:16" itemprop="dateCreated datePublished" datetime="2023-04-20T14:44:29+08:00">2023-04-20</time>
+              <time title="创建时间：2023-04-21 11:04:40" itemprop="dateCreated datePublished" datetime="2023-04-21T11:04:40+08:00">2023-04-21</time>
             </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2023-04-20 10:31:22" itemprop="dateModified" datetime="2023-04-20T10:31:22+08:00">2023-04-20</time>
+              </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="far fa-folder"></i>
@@ -228,7 +232,7 @@
                 </span>
                   ，
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E5%89%8D%E7%AB%AF/git/" itemprop="url" rel="index"><span itemprop="name">git</span></a>
+                  <a href="/categories/%E5%89%8D%E7%AB%AF/js/" itemprop="url" rel="index"><span itemprop="name">js</span></a>
                 </span>
             </span>
 
@@ -241,13 +245,13 @@
       </span>
       <span class="post-meta-item-text">Valine：</span>
     
-    <a title="valine" href="/2023/04/20/git/#valine-comments" itemprop="discussionUrl">
-      <span class="post-comments-count valine-comment-count" data-xid="/2023/04/20/git/" itemprop="commentCount"></span>
+    <a title="valine" href="/2023/04/21/%E9%98%B2%E6%8A%96%E8%8A%82%E6%B5%81%E7%9A%84%E7%90%86%E8%A7%A3%E5%8F%8A%E5%AE%9E%E7%8E%B0/#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/2023/04/21/%E9%98%B2%E6%8A%96%E8%8A%82%E6%B5%81%E7%9A%84%E7%90%86%E8%A7%A3%E5%8F%8A%E5%AE%9E%E7%8E%B0/" itemprop="commentCount"></span>
     </a>
   </span>
   
   
-            <div class="post-description">git常用命令</div>
+            <div class="post-description">防抖节流的理解及简单实现</div>
 
         </div>
       </header>
@@ -258,53 +262,10 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <p><img src="https://w.wallhaven.cc/full/1p/wallhaven-1pd1o9.jpg"></p>
-<h1 id="Git常用命令"><a href="#Git常用命令" class="headerlink" title="Git常用命令"></a>Git常用命令</h1><h3 id="基本命令"><a href="#基本命令" class="headerlink" title="基本命令"></a>基本命令</h3><ul>
-<li>git init：初始化 Git 仓库</li>
-<li>git clone：克隆远程 Git 仓库到本地</li>
-<li>git pull：从远程仓库拉取代码</li>
-<li>git add -A：添加文件到暂存区</li>
-<li>git commit -m ‘提交信息’：提交暂存区文件到 Git 仓库</li>
-<li>git push：推送代码到远程仓库</li>
-<li>git status：查看仓库状态</li>
-<li>git diff：查看工作区和暂存区的差异</li>
-<li>git log：查看提交历史</li>
-<li>git branch：查看本地分支列表</li>
-<li>git remote：查看远程仓库信息</li>
-</ul>
-<h3 id="配置操作"><a href="#配置操作" class="headerlink" title="配置操作"></a>配置操作</h3><ul>
-<li>git config：查看、添加或修改 Git 配置</li>
-<li>git config –global user.name<username>：设置 Git 全局用户邮箱</li>
-<li>git config –system：修改系统级别 Git 配置</li>
-<li>git config –local：修改当前仓库 Git 配置</li>
-<li>git config –unset：删除 Git 配置项</li>
-</ul>
-<h3 id="分支操作"><a href="#分支操作" class="headerlink" title="分支操作"></a>分支操作</h3><ul>
-<li>git branch：查看分支列表</li>
-<li>git branch <branchname>：创建分支</li>
-<li>git branch -d <branchname>：删除本地分支</li>
-<li>git checkout：切换分支</li>
-<li>git merge：合并分支</li>
-<li>git merge –no-ff：合并分支并保留分支历史</li>
-<li>git push <remote> – delete <branchname>：删除远程分支</li>
-</ul>
-<h3 id="撤销操作"><a href="#撤销操作" class="headerlink" title="撤销操作"></a>撤销操作</h3><ul>
-<li>git reset：撤销暂存区的所有修改</li>
-<li>git reset <filename>：撤销暂存区指定文件的修改</li>
-<li>git checkout – <filename>：撤销工作区指定文件的修改</li>
-<li>git revert <commit>：撤销指定提交的修改</li>
-<li>git reset –hard：重置工作区、暂存区和 Git 仓库状态</li>
-</ul>
-<h3 id="暂存操作"><a href="#暂存操作" class="headerlink" title="暂存操作"></a>暂存操作</h3><ul>
-<li>git stash：将未提交的修改保存到 Git 的 stash 中，以便之后恢复或者应用</li>
-<li>git stash save “message”：将未提交的修改保存到 Git 的 stash 中，并为当前的 stash 设置一个描述信息。描述信息可以帮助我们更好理解 stash 中保存的内容</li>
-<li>git stash list：列出所有保存在 stash 中的修改。每个 stash 都有一个唯一的标识符，可用来区分不同的 stash</li>
-<li>git stash apply <stash> ：将指定的 stash 应用到当前分支中，但是不会删除该 stash。如果要删除该 stash，需要使用 git stash drop 命令</li>
-<li>git stash pop：将最近保存的 stash 应用到当前分支中，并删除该 stash。</li>
-<li>git stash drop <stash>：删除指定的 stash</li>
-<li>git stash clear：删除所有的 stash</li>
-<li>git stash branch <branchname>：基于 stash 创建一个新的分支，并将该 stash 应用到新的分支中。新分支包含了 stash 中的所有修改</li>
-</ul>
+        <h3 id="防抖：用户频发触发事件，只要最后一次事件的操作"><a href="#防抖：用户频发触发事件，只要最后一次事件的操作" class="headerlink" title="防抖：用户频发触发事件，只要最后一次事件的操作"></a>防抖：用户频发触发事件，只要最后一次事件的操作</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">&lt;input type=<span class="string">&quot;text&quot;</span> id=<span class="string">&quot;input&quot;</span>&gt;</span><br><span class="line"><span class="language-xml"><span class="tag">&lt;<span class="name">script</span>&gt;</span><span class="language-javascript"></span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">	<span class="keyword">var</span> input = <span class="variable language_">document</span>.<span class="title function_">getElementById</span>(<span class="string">&#x27;input&#x27;</span>) </span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">	input.<span class="property">oninput</span> = <span class="title function_">antiShake</span>(<span class="function">()=&gt;</span>&#123;</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">  	<span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="variable language_">this</span>.<span class="property">value</span>)</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">  &#125;,<span class="number">500</span>)</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">	<span class="keyword">function</span> <span class="title function_">antiShake</span>(<span class="params">fn,dealy</span>)&#123;</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">  	<span class="keyword">let</span> t = <span class="literal">null</span></span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">    <span class="keyword">return</span> <span class="keyword">function</span>(<span class="params"></span>)&#123;</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">    <span class="keyword">if</span>(t!==<span class="literal">null</span>)&#123;</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">    	<span class="built_in">clearTimeout</span>(t)</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">    &#125;</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">    t = <span class="built_in">setTimeout</span>(<span class="function">()=&gt;</span>&#123;</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">    	fn.<span class="title function_">call</span>(<span class="variable language_">this</span>)</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">    &#125;,dealy)</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">    &#125;</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">  &#125;</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span></span><br></pre></td></tr></table></figure>
+
+<h3 id="节流则是控制事件高频率触发"><a href="#节流则是控制事件高频率触发" class="headerlink" title="节流则是控制事件高频率触发"></a>节流则是控制事件高频率触发</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">&lt;input type=<span class="string">&quot;text&quot;</span> id=<span class="string">&quot;input&quot;</span>&gt;</span><br><span class="line"><span class="language-xml"><span class="tag">&lt;<span class="name">script</span>&gt;</span><span class="language-javascript"></span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">	<span class="keyword">var</span> input = <span class="variable language_">document</span>.<span class="title function_">getElementById</span>(<span class="string">&#x27;input&#x27;</span>) </span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">	input.<span class="property">oninput</span> = <span class="title function_">throttle</span>(<span class="function">()=&gt;</span>&#123;</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">  	<span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="variable language_">this</span>.<span class="property">value</span>)</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">  &#125;,<span class="number">500</span>)</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">	<span class="keyword">function</span> <span class="title function_">throttle</span>(<span class="params">fn,dealy</span>)&#123;</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">  	<span class="keyword">let</span> flag = <span class="literal">true</span></span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">    <span class="keyword">return</span> <span class="keyword">function</span>(<span class="params"></span>)&#123;</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">    	<span class="keyword">if</span>(flag)&#123;</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">      	<span class="built_in">setTimeout</span>(<span class="function">()=&gt;</span>&#123;</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">        	fn.<span class="title function_">call</span>(<span class="variable language_">this</span>)</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">          flag = <span class="literal">true</span></span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">        &#125;)</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">      &#125;</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">      flag = <span class="literal">false</span></span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">    &#125;</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">  &#125;</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span></span><br></pre></td></tr></table></figure>
+
 
     </div>
 
@@ -314,7 +275,7 @@
 
       <footer class="post-footer">
           <div class="post-tags">
-              <a href="/tags/git%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/" rel="tag"># git常用命令</a>
+              <a href="/tags/%E9%98%B2%E6%8A%96%E8%8A%82%E6%B5%81/" rel="tag"># 防抖节流</a>
           </div>
 
         
@@ -323,13 +284,10 @@
         
     <div class="post-nav">
       <div class="post-nav-item">
-    <a href="/2023/04/20/nvm/" rel="prev" title="nvm">
-      <i class="fa fa-chevron-left"></i> nvm
+    <a href="/2023/04/21/%E4%BA%8C%E8%BF%9B%E5%88%B6%E6%B5%81/" rel="prev" title="二进制流处理方式">
+      <i class="fa fa-chevron-left"></i> 二进制流处理方式
     </a></div>
-      <div class="post-nav-item">
-    <a href="/2023/04/20/vite%E4%B8%8Ewebpack%E7%9A%84%E5%8C%BA%E5%88%AB/" rel="next" title="vite和webpack的区别">
-      vite和webpack的区别 <i class="fa fa-chevron-right"></i>
-    </a></div>
+      <div class="post-nav-item"></div>
     </div>
       </footer>
     
@@ -388,7 +346,7 @@
       
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Git%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4"><span class="nav-number">1.</span> <span class="nav-text">Git常用命令</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%9F%BA%E6%9C%AC%E5%91%BD%E4%BB%A4"><span class="nav-number">1.0.1.</span> <span class="nav-text">基本命令</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%85%8D%E7%BD%AE%E6%93%8D%E4%BD%9C"><span class="nav-number">1.0.2.</span> <span class="nav-text">配置操作</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%88%86%E6%94%AF%E6%93%8D%E4%BD%9C"><span class="nav-number">1.0.3.</span> <span class="nav-text">分支操作</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%92%A4%E9%94%80%E6%93%8D%E4%BD%9C"><span class="nav-number">1.0.4.</span> <span class="nav-text">撤销操作</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%9A%82%E5%AD%98%E6%93%8D%E4%BD%9C"><span class="nav-number">1.0.5.</span> <span class="nav-text">暂存操作</span></a></li></ol></li></ol></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%98%B2%E6%8A%96%EF%BC%9A%E7%94%A8%E6%88%B7%E9%A2%91%E5%8F%91%E8%A7%A6%E5%8F%91%E4%BA%8B%E4%BB%B6%EF%BC%8C%E5%8F%AA%E8%A6%81%E6%9C%80%E5%90%8E%E4%B8%80%E6%AC%A1%E4%BA%8B%E4%BB%B6%E7%9A%84%E6%93%8D%E4%BD%9C"><span class="nav-number">1.</span> <span class="nav-text">防抖：用户频发触发事件，只要最后一次事件的操作</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%8A%82%E6%B5%81%E5%88%99%E6%98%AF%E6%8E%A7%E5%88%B6%E4%BA%8B%E4%BB%B6%E9%AB%98%E9%A2%91%E7%8E%87%E8%A7%A6%E5%8F%91"><span class="nav-number">2.</span> <span class="nav-text">节流则是控制事件高频率触发</span></a></li></ol></div>
       </div>
       <!--/noindex-->
         

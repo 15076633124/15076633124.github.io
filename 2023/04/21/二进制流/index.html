@@ -20,23 +20,20 @@
     var CONFIG = {"hostname":"ygkyang.github.io","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"right","width":300,"display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
-  <meta name="description" content="vite和webpack的区别">
+  <meta name="description" content="前端处理后端接口返回的二进制流并下载">
 <meta property="og:type" content="article">
-<meta property="og:title" content="vite和webpack的区别">
-<meta property="og:url" content="https://ygkyang.github.io/2023/04/20/vite%E4%B8%8Ewebpack%E7%9A%84%E5%8C%BA%E5%88%AB/index.html">
+<meta property="og:title" content="二进制流处理方式">
+<meta property="og:url" content="https://ygkyang.github.io/2023/04/21/%E4%BA%8C%E8%BF%9B%E5%88%B6%E6%B5%81/index.html">
 <meta property="og:site_name" content="ygk杨">
-<meta property="og:description" content="vite和webpack的区别">
+<meta property="og:description" content="前端处理后端接口返回的二进制流并下载">
 <meta property="og:locale">
-<meta property="og:image" content="https://ygkyang.github.io/images/vite.png">
-<meta property="og:image" content="https://ygkyang.github.io/images/webpack.png">
-<meta property="article:published_time" content="2023-04-20T06:44:29.147Z">
-<meta property="article:modified_time" content="2023-04-20T01:37:27.237Z">
+<meta property="article:published_time" content="2023-04-21T03:04:40.981Z">
+<meta property="article:modified_time" content="2023-04-20T02:36:29.794Z">
 <meta property="article:author" content="ygk杨">
-<meta property="article:tag" content="vite和webpack的区别">
+<meta property="article:tag" content="处理后端接口返回的二进制流">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://ygkyang.github.io/images/vite.png">
 
-<link rel="canonical" href="https://ygkyang.github.io/2023/04/20/vite%E4%B8%8Ewebpack%E7%9A%84%E5%8C%BA%E5%88%AB/">
+<link rel="canonical" href="https://ygkyang.github.io/2023/04/21/%E4%BA%8C%E8%BF%9B%E5%88%B6%E6%B5%81/">
 
 
 <script id="page-configurations">
@@ -49,7 +46,7 @@
   };
 </script>
 
-  <title>vite和webpack的区别 | ygk杨</title>
+  <title>二进制流处理方式 | ygk杨</title>
   
 
 
@@ -193,7 +190,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-hans">
-    <link itemprop="mainEntityOfPage" href="https://ygkyang.github.io/2023/04/20/vite%E4%B8%8Ewebpack%E7%9A%84%E5%8C%BA%E5%88%AB/">
+    <link itemprop="mainEntityOfPage" href="https://ygkyang.github.io/2023/04/21/%E4%BA%8C%E8%BF%9B%E5%88%B6%E6%B5%81/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
@@ -206,7 +203,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          vite和webpack的区别
+          二进制流处理方式
         </h1>
 
         <div class="post-meta">
@@ -215,10 +212,16 @@
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
-              
 
-              <time title="创建时间：2023-04-20 14:44:29 / 修改时间：09:37:27" itemprop="dateCreated datePublished" datetime="2023-04-20T14:44:29+08:00">2023-04-20</time>
+              <time title="创建时间：2023-04-21 11:04:40" itemprop="dateCreated datePublished" datetime="2023-04-21T11:04:40+08:00">2023-04-21</time>
             </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2023-04-20 10:36:29" itemprop="dateModified" datetime="2023-04-20T10:36:29+08:00">2023-04-20</time>
+              </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="far fa-folder"></i>
@@ -226,6 +229,10 @@
               <span class="post-meta-item-text">分类于</span>
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
                   <a href="/categories/%E5%89%8D%E7%AB%AF/" itemprop="url" rel="index"><span itemprop="name">前端</span></a>
+                </span>
+                  ，
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E5%89%8D%E7%AB%AF/js/" itemprop="url" rel="index"><span itemprop="name">js</span></a>
                 </span>
             </span>
 
@@ -238,13 +245,13 @@
       </span>
       <span class="post-meta-item-text">Valine：</span>
     
-    <a title="valine" href="/2023/04/20/vite%E4%B8%8Ewebpack%E7%9A%84%E5%8C%BA%E5%88%AB/#valine-comments" itemprop="discussionUrl">
-      <span class="post-comments-count valine-comment-count" data-xid="/2023/04/20/vite%E4%B8%8Ewebpack%E7%9A%84%E5%8C%BA%E5%88%AB/" itemprop="commentCount"></span>
+    <a title="valine" href="/2023/04/21/%E4%BA%8C%E8%BF%9B%E5%88%B6%E6%B5%81/#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/2023/04/21/%E4%BA%8C%E8%BF%9B%E5%88%B6%E6%B5%81/" itemprop="commentCount"></span>
     </a>
   </span>
   
   
-            <div class="post-description">vite和webpack的区别</div>
+            <div class="post-description">前端处理后端接口返回的二进制流并下载</div>
 
         </div>
       </header>
@@ -255,27 +262,11 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <h2 id="vite"><a href="#vite" class="headerlink" title="vite"></a>vite</h2><p>一种新型前端构建工具，能够显著提升前端开发体验。它由两部分组成：</p>
-<ul>
-<li>开发服务器：它是基于 <a target="_blank" rel="noopener" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules">原生 ES 模块</a> 提供了  <a target="_blank" rel="noopener" href="https://cn.vitejs.dev/guide/features.html">丰富的内建功能</a>，例如  <a target="_blank" rel="noopener" href="https://cn.vitejs.dev/guide/features.html#hot-module-replacement">模块热更新（HMR）</a> </li>
-<li>一套构建指令，它基于 <a target="_blank" rel="noopener" href="https://rollupjs.org/">Rollup</a> 打包代码，并且是预配置的，可输出于生产环境的高度优化过的静态资源</li>
-</ul>
-<p>Vite 提供开箱即用的配置，同时它的  <a target="_blank" rel="noopener" href="https://cn.vitejs.dev/guide/api-plugin.html">插件 API</a>  和 <a target="_blank" rel="noopener" href="https://cn.vitejs.dev/guide/api-javascript.html">JavaScript API</a> 带来了高度的可扩展性，并有完整的类型支持。</p>
-<p><img src="/images/vite.png" alt="vite"></p>
-<h2 id="webpack"><a href="#webpack" class="headerlink" title="webpack"></a>webpack</h2><p>本质上，<strong>webpack</strong> 是一个用于现代 JavaScript 应用程序的 <em>静态模块打包工具</em>。当 webpack 处理应用程序时，它会在内部从一个或多个入口点构建一个 <a target="_blank" rel="noopener" href="https://webpack.docschina.org/concepts/dependency-graph/">依赖图(dependency graph)</a>，然后将你项目中所需的每一个模块组合成一个或多个 <em>bundles</em>，它们均为静态资源，用于展示你的内容。</p>
-<p><img src="/images/webpack.png" alt="webpack"></p>
-<h2 id="vite-和-webpack的区别"><a href="#vite-和-webpack的区别" class="headerlink" title="vite 和 webpack的区别"></a>vite 和 webpack的区别</h2><ul>
-<li>vite 是一个快速构建工具，适用于小型项目和快速原型开发。它使用 ES模块作为开发模式，可以快速启动开发服务器，支持热更新和快速构建</li>
-<li>webpack 是一个功能强大的构建工具，适用于大型项目和复杂的构建需求。它可以处理各种类型的文件，支持代码分割、懒加载、优化和压缩等功能，可以满足更多的构建需求</li>
-<li>区别：Vite 和 Webpack都是 JavaScript 应用程序的构建工具，它们的共同目标都是将应用程序源代码转换为可部署的 JavaScript、HTML、CSS。<ul>
-<li>构建方式<ul>
-<li>Vite 是一种 “零配置” 构建工具，使用 Rollup 进行快速的开发环境构建，同时支持基于插件的定制。在开发模式下 Vite 使用 ES modules 来直接引入模块，而不是打包所有代码，因此启动时间非常快。生产模式下，Vite 会对所有模块进行打包和压缩</li>
-<li>webpack 则需要一个配置文件来定义如何构建应用程序</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
+        <h3 id="处理后端接口返回的二进制流"><a href="#处理后端接口返回的二进制流" class="headerlink" title="处理后端接口返回的二进制流"></a>处理后端接口返回的二进制流</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"> <span class="comment">// 接口示例: config参数里传类型（responseType：blob）</span></span><br><span class="line"> <span class="attr">yxExcelExport</span>: <span class="function">(<span class="params">url: string,data: object</span>) =&gt;</span> &#123;</span><br><span class="line">    <span class="keyword">return</span> request.<span class="property">httpObj</span>.<span class="title function_">post</span>(url + <span class="string">&#x27;/v1/excel/yxExcelExport&#x27;</span>,data,&#123;<span class="attr">responseType</span>:  <span class="string">&#x27;blob&#x27;</span>&#125;);</span><br><span class="line"> &#125;,</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> url = <span class="variable language_">window</span>.<span class="property">URL</span>.<span class="title function_">createObjectURL</span>(res.<span class="property">data</span>) <span class="comment">// 将二进制文件转换为可访问的url</span></span><br><span class="line"> <span class="keyword">const</span> a = <span class="variable language_">document</span>.<span class="title function_">createElement</span>(<span class="string">&#x27;a&#x27;</span>)</span><br><span class="line"> <span class="variable language_">document</span>.<span class="property">body</span>.<span class="title function_">appendChild</span>(a)</span><br><span class="line"> a.<span class="property">href</span> = url</span><br><span class="line"> a.<span class="property">download</span> = <span class="string">&#x27;影像数据.xls&#x27;</span> </span><br><span class="line"> a.<span class="title function_">click</span>()</span><br><span class="line"> <span class="variable language_">window</span>.<span class="property">URL</span>.<span class="title function_">revokeObjectURL</span>(url)</span><br></pre></td></tr></table></figure>
+
+
+
+
 
     </div>
 
@@ -285,7 +276,7 @@
 
       <footer class="post-footer">
           <div class="post-tags">
-              <a href="/tags/vite%E5%92%8Cwebpack%E7%9A%84%E5%8C%BA%E5%88%AB/" rel="tag"># vite和webpack的区别</a>
+              <a href="/tags/%E5%A4%84%E7%90%86%E5%90%8E%E7%AB%AF%E6%8E%A5%E5%8F%A3%E8%BF%94%E5%9B%9E%E7%9A%84%E4%BA%8C%E8%BF%9B%E5%88%B6%E6%B5%81/" rel="tag"># 处理后端接口返回的二进制流</a>
           </div>
 
         
@@ -294,11 +285,11 @@
         
     <div class="post-nav">
       <div class="post-nav-item">
-    <a href="/2023/04/20/git/" rel="prev" title="git">
-      <i class="fa fa-chevron-left"></i> git
+    <a href="/2023/04/21/vite%E4%B8%8Ewebpack%E7%9A%84%E5%8C%BA%E5%88%AB/" rel="prev" title="vite和webpack的区别">
+      <i class="fa fa-chevron-left"></i> vite和webpack的区别
     </a></div>
       <div class="post-nav-item">
-    <a href="/2023/04/20/%E9%98%B2%E6%8A%96%E8%8A%82%E6%B5%81%E7%9A%84%E7%90%86%E8%A7%A3%E5%8F%8A%E5%AE%9E%E7%8E%B0/" rel="next" title="防抖节流的理解及实现">
+    <a href="/2023/04/21/%E9%98%B2%E6%8A%96%E8%8A%82%E6%B5%81%E7%9A%84%E7%90%86%E8%A7%A3%E5%8F%8A%E5%AE%9E%E7%8E%B0/" rel="next" title="防抖节流的理解及实现">
       防抖节流的理解及实现 <i class="fa fa-chevron-right"></i>
     </a></div>
     </div>
@@ -359,7 +350,7 @@
       
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#vite"><span class="nav-number">1.</span> <span class="nav-text">vite</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#webpack"><span class="nav-number">2.</span> <span class="nav-text">webpack</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#vite-%E5%92%8C-webpack%E7%9A%84%E5%8C%BA%E5%88%AB"><span class="nav-number">3.</span> <span class="nav-text">vite 和 webpack的区别</span></a></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%A4%84%E7%90%86%E5%90%8E%E7%AB%AF%E6%8E%A5%E5%8F%A3%E8%BF%94%E5%9B%9E%E7%9A%84%E4%BA%8C%E8%BF%9B%E5%88%B6%E6%B5%81"><span class="nav-number">1.</span> <span class="nav-text">处理后端接口返回的二进制流</span></a></li></ol></div>
       </div>
       <!--/noindex-->
         
