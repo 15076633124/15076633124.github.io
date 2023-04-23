@@ -20,23 +20,22 @@
     var CONFIG = {"hostname":"ygkyang.github.io","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"right","width":300,"display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
-  <meta name="description" content="vite和webpack的区别">
+  <meta name="description" content="this优先级(显示绑定，隐式绑定，new绑定)及一些特殊绑定和面试题">
 <meta property="og:type" content="article">
-<meta property="og:title" content="vite和webpack的区别">
-<meta property="og:url" content="https://ygkyang.github.io/2023/04/21/vite%E4%B8%8Ewebpack%E7%9A%84%E5%8C%BA%E5%88%AB/index.html">
+<meta property="og:title" content="this优先级">
+<meta property="og:url" content="https://ygkyang.github.io/2023/04/23/this%E7%9A%84%E4%BC%98%E5%85%88%E7%BA%A7/index.html">
 <meta property="og:site_name" content="ygk杨">
-<meta property="og:description" content="vite和webpack的区别">
+<meta property="og:description" content="this优先级(显示绑定，隐式绑定，new绑定)及一些特殊绑定和面试题">
 <meta property="og:locale">
-<meta property="og:image" content="https://ygkyang.github.io/images/vite.png">
-<meta property="og:image" content="https://ygkyang.github.io/images/webpack.png">
-<meta property="article:published_time" content="2023-04-21T03:04:40.977Z">
-<meta property="article:modified_time" content="2023-04-20T01:37:27.237Z">
+<meta property="og:image" content="https://ygkyang.github.io/images/this%E8%83%8C%E6%99%AF.jpg">
+<meta property="article:published_time" content="2023-04-23T06:25:35.173Z">
+<meta property="article:modified_time" content="2023-04-23T07:39:31.903Z">
 <meta property="article:author" content="ygk杨">
-<meta property="article:tag" content="vite和webpack的区别">
+<meta property="article:tag" content="this优先级">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://ygkyang.github.io/images/vite.png">
+<meta name="twitter:image" content="https://ygkyang.github.io/images/this%E8%83%8C%E6%99%AF.jpg">
 
-<link rel="canonical" href="https://ygkyang.github.io/2023/04/21/vite%E4%B8%8Ewebpack%E7%9A%84%E5%8C%BA%E5%88%AB/">
+<link rel="canonical" href="https://ygkyang.github.io/2023/04/23/this%E7%9A%84%E4%BC%98%E5%85%88%E7%BA%A7/">
 
 
 <script id="page-configurations">
@@ -49,7 +48,7 @@
   };
 </script>
 
-  <title>vite和webpack的区别 | ygk杨</title>
+  <title>this优先级 | ygk杨</title>
   
 
 
@@ -193,7 +192,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-hans">
-    <link itemprop="mainEntityOfPage" href="https://ygkyang.github.io/2023/04/21/vite%E4%B8%8Ewebpack%E7%9A%84%E5%8C%BA%E5%88%AB/">
+    <link itemprop="mainEntityOfPage" href="https://ygkyang.github.io/2023/04/23/this%E7%9A%84%E4%BC%98%E5%85%88%E7%BA%A7/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
@@ -206,7 +205,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          vite和webpack的区别
+          this优先级
         </h1>
 
         <div class="post-meta">
@@ -216,14 +215,14 @@
               </span>
               <span class="post-meta-item-text">发表于</span>
 
-              <time title="创建时间：2023-04-21 11:04:40" itemprop="dateCreated datePublished" datetime="2023-04-21T11:04:40+08:00">2023-04-21</time>
+              <time title="创建时间：2023-04-23 14:25:35" itemprop="dateCreated datePublished" datetime="2023-04-23T14:25:35+08:00">2023-04-23</time>
             </span>
               <span class="post-meta-item">
                 <span class="post-meta-item-icon">
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2023-04-20 09:37:27" itemprop="dateModified" datetime="2023-04-20T09:37:27+08:00">2023-04-20</time>
+                <time title="修改时间：2023-04-23 15:39:31" itemprop="dateModified" datetime="2023-04-23T15:39:31+08:00">2023-04-23</time>
               </span>
 
           
@@ -235,8 +234,8 @@
       </span>
       <span class="post-meta-item-text">Valine：</span>
     
-    <a title="valine" href="/2023/04/21/vite%E4%B8%8Ewebpack%E7%9A%84%E5%8C%BA%E5%88%AB/#valine-comments" itemprop="discussionUrl">
-      <span class="post-comments-count valine-comment-count" data-xid="/2023/04/21/vite%E4%B8%8Ewebpack%E7%9A%84%E5%8C%BA%E5%88%AB/" itemprop="commentCount"></span>
+    <a title="valine" href="/2023/04/23/this%E7%9A%84%E4%BC%98%E5%85%88%E7%BA%A7/#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/2023/04/23/this%E7%9A%84%E4%BC%98%E5%85%88%E7%BA%A7/" itemprop="commentCount"></span>
     </a>
   </span>
   
@@ -246,7 +245,7 @@
                 <i class="far fa-file-word"></i>
               </span>
                 <span class="post-meta-item-text">本文字数：</span>
-              <span>727</span>
+              <span>1.2k</span>
             </span>
             <span class="post-meta-item" title="阅读时长">
               <span class="post-meta-item-icon">
@@ -255,7 +254,7 @@
                 <span class="post-meta-item-text">阅读时长 &asymp;</span>
               <span>1 分钟</span>
             </span>
-            <div class="post-description">vite和webpack的区别</div>
+            <div class="post-description">this优先级(显示绑定，隐式绑定，new绑定)及一些特殊绑定和面试题</div>
 
         </div>
       </header>
@@ -266,27 +265,19 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <h2 id="vite"><a href="#vite" class="headerlink" title="vite"></a>vite</h2><p>一种新型前端构建工具，能够显著提升前端开发体验。它由两部分组成：</p>
-<ul>
-<li>开发服务器：它是基于 <a target="_blank" rel="noopener" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules">原生 ES 模块</a> 提供了  <a target="_blank" rel="noopener" href="https://cn.vitejs.dev/guide/features.html">丰富的内建功能</a>，例如  <a target="_blank" rel="noopener" href="https://cn.vitejs.dev/guide/features.html#hot-module-replacement">模块热更新（HMR）</a> </li>
-<li>一套构建指令，它基于 <a target="_blank" rel="noopener" href="https://rollupjs.org/">Rollup</a> 打包代码，并且是预配置的，可输出于生产环境的高度优化过的静态资源</li>
-</ul>
-<p>Vite 提供开箱即用的配置，同时它的  <a target="_blank" rel="noopener" href="https://cn.vitejs.dev/guide/api-plugin.html">插件 API</a>  和 <a target="_blank" rel="noopener" href="https://cn.vitejs.dev/guide/api-javascript.html">JavaScript API</a> 带来了高度的可扩展性，并有完整的类型支持。</p>
-<p><img src="/images/vite.png" alt="vite"></p>
-<h2 id="webpack"><a href="#webpack" class="headerlink" title="webpack"></a>webpack</h2><p>本质上，<strong>webpack</strong> 是一个用于现代 JavaScript 应用程序的 <em>静态模块打包工具</em>。当 webpack 处理应用程序时，它会在内部从一个或多个入口点构建一个 <a target="_blank" rel="noopener" href="https://webpack.docschina.org/concepts/dependency-graph/">依赖图(dependency graph)</a>，然后将你项目中所需的每一个模块组合成一个或多个 <em>bundles</em>，它们均为静态资源，用于展示你的内容。</p>
-<p><img src="/images/webpack.png" alt="webpack"></p>
-<h2 id="vite-和-webpack的区别"><a href="#vite-和-webpack的区别" class="headerlink" title="vite 和 webpack的区别"></a>vite 和 webpack的区别</h2><ul>
-<li>vite 是一个快速构建工具，适用于小型项目和快速原型开发。它使用 ES模块作为开发模式，可以快速启动开发服务器，支持热更新和快速构建</li>
-<li>webpack 是一个功能强大的构建工具，适用于大型项目和复杂的构建需求。它可以处理各种类型的文件，支持代码分割、懒加载、优化和压缩等功能，可以满足更多的构建需求</li>
-<li>区别：Vite 和 Webpack都是 JavaScript 应用程序的构建工具，它们的共同目标都是将应用程序源代码转换为可部署的 JavaScript、HTML、CSS。<ul>
-<li>构建方式<ul>
-<li>Vite 是一种 “零配置” 构建工具，使用 Rollup 进行快速的开发环境构建，同时支持基于插件的定制。在开发模式下 Vite 使用 ES modules 来直接引入模块，而不是打包所有代码，因此启动时间非常快。生产模式下，Vite 会对所有模块进行打包和压缩</li>
-<li>webpack 则需要一个配置文件来定义如何构建应用程序</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
+        <img src="/images/this背景.jpg" alt="" />
+
+<h2 id="this优先级"><a href="#this优先级" class="headerlink" title="this优先级"></a>this优先级</h2><h3 id="显示绑定高于隐式绑定"><a href="#显示绑定高于隐式绑定" class="headerlink" title="显示绑定高于隐式绑定"></a>显示绑定高于隐式绑定</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> obj = &#123;</span><br><span class="line">  <span class="attr">name</span>: <span class="string">&quot;obj&quot;</span>,</span><br><span class="line">  <span class="attr">foo</span>: <span class="keyword">function</span>(<span class="params"></span>) &#123;</span><br><span class="line">    <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="variable language_">this</span>)</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">obj.<span class="title function_">foo</span>() <span class="comment">// obj</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// 1.call/apply的显示绑定高于隐式绑定</span></span><br><span class="line">obj.<span class="property">foo</span>.<span class="title function_">apply</span>(<span class="string">&#x27;abc&#x27;</span>) <span class="comment">// abc</span></span><br><span class="line">obj.<span class="property">foo</span>.<span class="title function_">call</span>(<span class="string">&#x27;abc&#x27;</span>) <span class="comment">// abc</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// 2.bind的优先级高于隐式绑定</span></span><br><span class="line"><span class="keyword">var</span> bar = obj.<span class="property">foo</span>.<span class="title function_">bind</span>(<span class="string">&quot;cba&quot;</span>)</span><br><span class="line"><span class="title function_">bar</span>() <span class="comment">// cba</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// 3.更明显的比较</span></span><br><span class="line"><span class="keyword">function</span> <span class="title function_">foo</span>(<span class="params"></span>) &#123;</span><br><span class="line">  <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="variable language_">this</span>)</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> obj = &#123;</span><br><span class="line">  <span class="attr">name</span>: <span class="string">&quot;obj&quot;</span>,</span><br><span class="line">  <span class="attr">foo</span>: foo.<span class="title function_">bind</span>(<span class="string">&quot;aaa&quot;</span>)</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">obj.<span class="title function_">foo</span>() <span class="comment">// aaa</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="new高于隐式绑定和显示绑定"><a href="#new高于隐式绑定和显示绑定" class="headerlink" title="new高于隐式绑定和显示绑定"></a>new高于隐式绑定和显示绑定</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> obj = &#123;</span><br><span class="line">  <span class="attr">name</span>: <span class="string">&quot;obj&quot;</span>,</span><br><span class="line">  <span class="attr">foo</span>: <span class="keyword">function</span>(<span class="params"></span>) &#123;</span><br><span class="line">    <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="variable language_">this</span>)</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// new的优先级高于隐式绑定</span></span><br><span class="line"><span class="keyword">var</span> f = <span class="keyword">new</span> obj.<span class="title function_">foo</span>() <span class="comment">// foo</span></span><br><span class="line"><span class="keyword">var</span> bar = obj.<span class="property">foo</span>.<span class="title function_">bind</span>(<span class="string">&quot;aaa&quot;</span>) <span class="comment">// foo</span></span><br><span class="line"><span class="keyword">var</span> obj = <span class="keyword">new</span> <span class="title function_">bar</span>() <span class="comment">// foo</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h3><blockquote>
+<p><span style="color:#c3b1b1" >new绑定 &gt; 显示绑定(apply&#x2F;call&#x2F;bind) &gt; 隐式绑定(obj.foo()) &gt; 默认绑定(独立函数调用)</span></p>
+</blockquote>
+<h2 id="this特殊绑定"><a href="#this特殊绑定" class="headerlink" title="this特殊绑定"></a>this特殊绑定</h2><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">function</span> <span class="title function_">foo</span>(<span class="params"></span>) &#123;</span><br><span class="line">  <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="variable language_">this</span>)</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">foo.<span class="title function_">apply</span>(<span class="string">&quot;abc&quot;</span>)</span><br><span class="line">foo.<span class="title function_">apply</span>(&#123;&#125;)</span><br><span class="line"></span><br><span class="line"><span class="comment">// apply/call/bind: 当传入null/undefined时, 自动将this绑定成全局对象</span></span><br><span class="line">foo.<span class="title function_">apply</span>(<span class="literal">null</span>)</span><br><span class="line">foo.<span class="title function_">apply</span>(<span class="literal">undefined</span>)</span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> bar = foo.<span class="title function_">bind</span>(<span class="literal">null</span>)</span><br><span class="line"><span class="title function_">bar</span>()</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> obj1 = &#123;</span><br><span class="line">  <span class="attr">name</span>: <span class="string">&quot;obj1&quot;</span>,</span><br><span class="line">  <span class="attr">foo</span>: <span class="keyword">function</span>(<span class="params"></span>) &#123;</span><br><span class="line">    <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="variable language_">this</span>)</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> obj2 = &#123;</span><br><span class="line">  <span class="attr">name</span>: <span class="string">&quot;obj2&quot;</span></span><br><span class="line">&#125;; <span class="comment">// 代码规范问题，不加分号会认为和最后一行是一个整体</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// obj2.bar = obj1.foo</span></span><br><span class="line"><span class="comment">// obj2.bar()</span></span><br><span class="line"></span><br><span class="line">(obj2.<span class="property">bar</span> = obj1.<span class="property">foo</span>)()</span><br></pre></td></tr></table></figure>
+
 
     </div>
 
@@ -296,7 +287,7 @@
 
       <footer class="post-footer">
           <div class="post-tags">
-              <a href="/tags/vite%E5%92%8Cwebpack%E7%9A%84%E5%8C%BA%E5%88%AB/" rel="tag"># vite和webpack的区别</a>
+              <a href="/tags/this%E4%BC%98%E5%85%88%E7%BA%A7/" rel="tag"># this优先级</a>
           </div>
 
         
@@ -305,13 +296,10 @@
         
     <div class="post-nav">
       <div class="post-nav-item">
-    <a href="/2023/04/21/nvm/" rel="prev" title="nvm">
-      <i class="fa fa-chevron-left"></i> nvm
+    <a href="/2023/04/21/%E9%98%B2%E6%8A%96%E8%8A%82%E6%B5%81%E7%9A%84%E7%90%86%E8%A7%A3%E5%8F%8A%E5%AE%9E%E7%8E%B0/" rel="prev" title="防抖节流的理解及实现">
+      <i class="fa fa-chevron-left"></i> 防抖节流的理解及实现
     </a></div>
-      <div class="post-nav-item">
-    <a href="/2023/04/21/%E4%BA%8C%E8%BF%9B%E5%88%B6%E6%B5%81/" rel="next" title="二进制流处理方式">
-      二进制流处理方式 <i class="fa fa-chevron-right"></i>
-    </a></div>
+      <div class="post-nav-item"></div>
     </div>
       </footer>
     
@@ -370,7 +358,7 @@
       
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#vite"><span class="nav-number">1.</span> <span class="nav-text">vite</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#webpack"><span class="nav-number">2.</span> <span class="nav-text">webpack</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#vite-%E5%92%8C-webpack%E7%9A%84%E5%8C%BA%E5%88%AB"><span class="nav-number">3.</span> <span class="nav-text">vite 和 webpack的区别</span></a></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#this%E4%BC%98%E5%85%88%E7%BA%A7"><span class="nav-number">1.</span> <span class="nav-text">this优先级</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%98%BE%E7%A4%BA%E7%BB%91%E5%AE%9A%E9%AB%98%E4%BA%8E%E9%9A%90%E5%BC%8F%E7%BB%91%E5%AE%9A"><span class="nav-number">1.1.</span> <span class="nav-text">显示绑定高于隐式绑定</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#new%E9%AB%98%E4%BA%8E%E9%9A%90%E5%BC%8F%E7%BB%91%E5%AE%9A%E5%92%8C%E6%98%BE%E7%A4%BA%E7%BB%91%E5%AE%9A"><span class="nav-number">1.2.</span> <span class="nav-text">new高于隐式绑定和显示绑定</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%80%BB%E7%BB%93"><span class="nav-number">1.3.</span> <span class="nav-text">总结</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#this%E7%89%B9%E6%AE%8A%E7%BB%91%E5%AE%9A"><span class="nav-number">2.</span> <span class="nav-text">this特殊绑定</span></a></li></ol></div>
       </div>
       <!--/noindex-->
         
