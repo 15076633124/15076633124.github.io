@@ -152,9 +152,8 @@
     <url>/2023/04/21/git/</url>
     <content><![CDATA[<img src="/images/git.png"  />
 <span id="more"></span>
-# Git常用命令
 
-<h3 id="基本命令"><a href="#基本命令" class="headerlink" title="基本命令"></a>基本命令</h3><ul>
+<h1 id="Git常用命令"><a href="#Git常用命令" class="headerlink" title="Git常用命令"></a>Git常用命令</h1><h3 id="基本命令"><a href="#基本命令" class="headerlink" title="基本命令"></a>基本命令</h3><ul>
 <li>git init：初始化 Git 仓库</li>
 <li>git clone：克隆远程 Git 仓库到本地</li>
 <li>git pull：从远程仓库拉取代码</li>
